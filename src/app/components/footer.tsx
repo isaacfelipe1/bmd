@@ -129,7 +129,7 @@ const Footer = () => {
           </div>
           <div>
             <img
-              src="/assets/qrcode.jpeg"
+              src="/assets/qrCode.jpeg"
               alt="QR Code para doação PIX"
               className="w-32 h-32 object-cover"
             />
