@@ -17,7 +17,7 @@ const DonationModal: React.FC<DonationModalProps> = ({
       <div className="bg-white p-6 rounded-lg max-w-sm w-full">
         <h2 className="text-xl font-bold mb-4 text-center">Faça uma Doação</h2>
         <img
-          src="/assets/qrcode.jpeg"
+          src="/assets/qrCode.jpeg"
           alt="QR Code para doação PIX"
           className="w-48 h-48 object-cover mx-auto mb-4"
         />
