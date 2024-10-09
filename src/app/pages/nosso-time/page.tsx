@@ -13,8 +13,8 @@ const NossoTime = () => {
   };
 
   const teamDescription = {
-    heading: 'Corpo docente',
-    subheading: 'Escola Profª Olindina Roriz Dantas',
+    heading: 'Voluntários e bolsistas', 
+    subheading: 'Biblioteca comunitária Maria Dolores Chico Xavier',
   };
 
   const teamMembers = [
