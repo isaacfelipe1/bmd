@@ -17,14 +17,10 @@ const NossaEquipeSection = () => {
       <div className="text-center md:text-left max-w-lg">
         <h2 className="text-4xl font-bold text-orange-600 mb-4">Nossa Equipe</h2>
         <p className="text-lg text-gray-700 leading-relaxed">
-          Somos um grupo de diferentes profissionais com o mesmo objetivo:
-          transformar a sociedade por meio da educação. Dia após dia, passamos o
-          nosso melhor para as crianças que enxergam na Escola Professora
-          Olindina um futuro com diversas portas abertas.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus earum illum autem rem aliquam doloribus dolorem ut ab sunt maxime. Dignissimos labore nesciunt consequuntur beatae delectus nisi ipsa sapiente quam!
         </p>
         <p className="mt-4 text-lg text-gray-700 leading-relaxed">
-          Mais do que bons alunos, queremos formar bons cidadãos, fazendo com
-          que cada um possa escolher seu caminho e realizar os seus sonhos.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi incidunt laboriosam maiores perspiciatis, molestias nesciunt tenetur, adipisci magni numquam ab deserunt? Neque consequuntur est repellendus cupiditate placeat? Totam, distinctio perspiciatis.
         </p>
       </div>
     </section>
