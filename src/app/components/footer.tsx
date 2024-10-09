@@ -49,7 +49,6 @@ const Footer = () => {
           </button>
         </div>
         <DonationModal showModal={showModal} onClose={handleCloseModal} />
-
         <div className="text-center md:text-left mt-8">
           <h3 className="font-bold mb-2 text-lg">Endereço:</h3>
           <p className="text-sm">
