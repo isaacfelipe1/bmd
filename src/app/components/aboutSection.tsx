@@ -1,18 +1,15 @@
 import React from 'react';
-import Image from 'next/image';
 
 type AboutSectionProps = {
   aboutTitle: string;
   aboutDescription1: string;
   aboutDescription2: string;
-  imageUrl: string;
 };
 
 const AboutSection: React.FC<AboutSectionProps> = ({
   aboutTitle,
   aboutDescription1,
   aboutDescription2,
-  imageUrl, 
 }) => {
   return (
     <section className="bg-white py-12">
@@ -29,16 +26,6 @@ const AboutSection: React.FC<AboutSectionProps> = ({
         <p className="text-lg text-gray-700 leading-relaxed">
           {aboutDescription2}
         </p>
-       
-        <div className="mt-6">
-          <Image
-            src={imageUrl} 
-            alt="About Section Image"
-            width={600} 
-            height={400} 
-            className="rounded-lg shadow-md"
-          />
-        </div>
       </div>
     </section>
   );

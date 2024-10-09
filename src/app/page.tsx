@@ -17,7 +17,6 @@ const OngsPage = () => {
       'Biblioteca Comunitária, um ponto de cultura e humanização',
     aboutDescription2:
       'Um espaço da produção de diferentes manifestações artísticas. Além de propiciar o acesso a diversidade literária para a comunidade, a biblioteca realiza rodas de leituras, rodas musicais, concurso de poesia e desenho e oficinas de contação de histórias.',
-    imageUrl: '/assets/biblioteca.JPG',
     cardData: [
       {
         imageUrl: '/assets/foto01.jpg',
@@ -73,7 +72,6 @@ const OngsPage = () => {
           aboutTitle={content.aboutTitle}
           aboutDescription1={content.aboutDescription1}
           aboutDescription2={content.aboutDescription2}
-          imageUrl={content.imageUrl}
         />
         <SupportersSection supporters={content.supporters} />
       </main>
