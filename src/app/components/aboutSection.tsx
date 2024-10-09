@@ -1,36 +1,33 @@
 import React from 'react';
-import Image from 'next/image';
 
 type AboutSectionProps = {
   aboutTitle: string;
   aboutDescription1: string;
   aboutDescription2: string;
-  imageUrl: string;
 };
 
 const AboutSection: React.FC<AboutSectionProps> = ({
   aboutTitle,
   aboutDescription1,
   aboutDescription2,
-  imageUrl,
 }) => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between gap-8 my-10">
-      <div className="w-full md:w-1/2">
-        <Image
-          src={imageUrl}
-          alt={aboutTitle}
-          className="w-full h-auto max-h-80 object-cover rounded-lg shadow-lg"
-          width={1000}
-          height={1000}
-        />
+    <section className="bg-white py-12">
+      <div className="container mx-auto px-4">
+        <h3 className="text-green-700 text-sm uppercase font-bold tracking-wide mb-4">
+          O PROJETO
+        </h3>
+        <h2 className="text-orange-600 text-4xl font-bold mb-6">
+          {aboutTitle}
+        </h2>
+        <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+          {aboutDescription1}
+        </p>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          {aboutDescription2}
+        </p>
       </div>
-      <div className="w-full md:w-1/2">
-        <h3 className="text-3xl font-bold text-green-700 mb-4">{aboutTitle}</h3>
-        <p className="text-lg mb-4">{aboutDescription1}</p>
-        <p className="text-lg">{aboutDescription2}</p>
-      </div>
-    </div>
+    </section>
   );
 };
 
