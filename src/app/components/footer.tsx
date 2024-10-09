@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import DonationModal from './donationModal';
 import { FaFacebookF, FaInstagram } from 'react-icons/fa';
+import Image from 'next/image'; 
 
 const Footer = () => {
   const [showModal, setShowModal] = useState(false);
@@ -33,10 +34,12 @@ const Footer = () => {
             <p>Instituição: Sicoob Amazônia</p>
           </div>
           <div className="mt-4 md:mt-0">
-            <img
+            <Image
               src="/assets/qrCode.jpeg"
               alt="QR Code para doação PIX"
-              className="w-28 h-28 object-cover rounded-md shadow-md"
+              width={112} 
+              height={112} 
+              className="rounded-md shadow-md"
             />
           </div>
         </div>
@@ -49,6 +52,7 @@ const Footer = () => {
           </button>
         </div>
         <DonationModal showModal={showModal} onClose={handleCloseModal} />
+
         <div className="text-center md:text-left mt-8">
           <h3 className="font-bold mb-2 text-lg">Endereço:</h3>
           <p className="text-sm">
