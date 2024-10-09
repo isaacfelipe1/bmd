@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 type AboutSectionProps = {
   aboutTitle: string;
@@ -16,10 +17,12 @@ const AboutSection: React.FC<AboutSectionProps> = ({
   return (
     <div className="flex flex-col md:flex-row items-center justify-between gap-8 my-10">
       <div className="w-full md:w-1/2">
-        <img
+        <Image
           src={imageUrl}
           alt={aboutTitle}
           className="w-full h-auto max-h-80 object-cover rounded-lg shadow-lg"
+          width={1000}
+          height={1000}
         />
       </div>
       <div className="w-full md:w-1/2">

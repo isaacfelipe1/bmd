@@ -6,6 +6,7 @@ import Header from './components/header';
 import Navbar from './components/navbar';
 import AboutSection from './components/aboutSection';
 import ScrollToTopButton from './components/scrollToTopButton';
+import SupportersSection from './components/supportersSection'; 
 
 const OngsPage = () => {
   const content = {
@@ -74,6 +75,7 @@ const OngsPage = () => {
           aboutDescription2={content.aboutDescription2}
           imageUrl={content.imageUrl}
         />
+        <SupportersSection supporters={content.supporters} />
       </main>
       <Footer />
       <ScrollToTopButton />
