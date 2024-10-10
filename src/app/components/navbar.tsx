@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
             COMO TUDO COMEÇOU
           </Link>
           <Link
-            href="/contato"
+            href="../pages/contato"
             className="bg-[#FFA500] text-white py-1 px-3 rounded-full font-medium text-sm hover:bg-[#FF8C00] transition duration-300"
           >
             CONTATO
@@ -124,7 +124,7 @@ const Navbar: React.FC = () => {
               COMO TUDO COMEÇOU
             </Link>
             <Link
-              href="/contato"
+              href="../pages/contato"
               className="block bg-[#FFA500] text-white py-1 px-3 rounded-full font-medium text-sm hover:bg-[#FF8C00] transition duration-300"
               onClick={() => setIsMobileMenuOpen(false)}
             >
