@@ -1,12 +1,12 @@
 'use client';
-
 import React from 'react';
 import Footer from './components/footer';
 import Header from './components/header';
 import Navbar from './components/navbar';
 import AboutSection from './components/aboutSection';
 import ScrollToTopButton from './components/scrollToTopButton';
-import SupportersSection from './components/supportersSection'; 
+import SupportersSection from './components/supportersSection';
+import EmprestimoLivrosSection from './components/emprestimoLivrosSection'; // Importando o novo componente
 
 const OngsPage = () => {
   const content = {
@@ -17,26 +17,6 @@ const OngsPage = () => {
       'Biblioteca Comunitária, um ponto de cultura e humanização',
     aboutDescription2:
       'Um espaço da produção de diferentes manifestações artísticas. Além de propiciar o acesso a diversidade literária para a comunidade, a biblioteca realiza rodas de leituras, rodas musicais, concurso de poesia e desenho e oficinas de contação de histórias.',
-    cardData: [
-      {
-        imageUrl: '/assets/foto01.jpg',
-        text: 'Fomentar a diversidade literária',
-      },
-      {
-        imageUrl: '/assets/foto02.jpg',
-        text: '',
-      },
-      {
-        imageUrl: '/assets/foto03.jpg',
-        text: '',
-      },
-    ],
-    galleryPhotos: [
-      { url: '/assets/livros01.jpg', alt: 'Foto de livros' },
-      { url: '/assets/livros02.jpg', alt: 'Prateleira de livros diversos' },
-      { url: '/assets/livros03.jpg', alt: 'Livros em destaque' },
-      { url: '/assets/livros04.jpg', alt: 'Leitura infantil' },
-    ],
     supporters: [
       {
         logoUrl: '/assets/uea_logo_horizontal_verde.png',
@@ -73,6 +53,7 @@ const OngsPage = () => {
           aboutDescription1={content.aboutDescription1}
           aboutDescription2={content.aboutDescription2}
         />
+        <EmprestimoLivrosSection /> {/* Incluindo o componente de empréstimo de livros */}
         <SupportersSection supporters={content.supporters} />
       </main>
       <Footer />
