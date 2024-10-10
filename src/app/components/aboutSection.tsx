@@ -12,12 +12,12 @@ const AboutSection: React.FC<AboutSectionProps> = ({
   aboutDescription2,
 }) => {
   return (
-    <section className="bg-white py-12">
-      <div className="container mx-auto px-4">
-        <h3 className="text-green-700 text-sm uppercase font-bold tracking-wide mb-4">
-          O PROJETO
+    <section className="relative py-12" style={{ marginTop: '50px' }}>
+      <div className="container mx-auto px-4 lg:px-8 lg:max-w-4xl shadow-lg rounded-lg backdrop-blur-md bg-transparent">
+        <h3 className="text-[#005226] text-sm uppercase font-bold tracking-wide mb-4">
+          SOBRE O ECO
         </h3>
-        <h2 className="text-orange-600 text-4xl font-bold mb-6">
+        <h2 className="text-[#005226] text-3xl lg:text-4xl font-bold mb-6">
           {aboutTitle}
         </h2>
         <p className="text-lg text-gray-700 mb-4 leading-relaxed">
