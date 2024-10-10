@@ -5,7 +5,7 @@ import Header from './components/header';
 import AboutSection from './components/aboutSection';
 import ScrollToTopButton from './components/scrollToTopButton';
 import SupportersSection from './components/supportersSection';
-import EmprestimoLivrosSection from './components/emprestimoLivrosSection'; // Importando o novo componente
+import EmprestimoLivrosSection from './components/emprestimoLivrosSection'; 
 
 const OngsPage = () => {
   const content = {
