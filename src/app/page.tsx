@@ -2,7 +2,6 @@
 import React from 'react';
 import Footer from './components/footer';
 import Header from './components/header';
-import Navbar from './components/navbar';
 import AboutSection from './components/aboutSection';
 import ScrollToTopButton from './components/scrollToTopButton';
 import SupportersSection from './components/supportersSection';
@@ -43,7 +42,6 @@ const OngsPage = () => {
 
   return (
     <div className="min-h-screen bg-white text-black flex flex-col justify-between">
-      <Navbar />
       <div>
         <Header title={content.title} description={content.description} />
       </div>
@@ -53,7 +51,7 @@ const OngsPage = () => {
           aboutDescription1={content.aboutDescription1}
           aboutDescription2={content.aboutDescription2}
         />
-        <EmprestimoLivrosSection /> {/* Incluindo o componente de empréstimo de livros */}
+        <EmprestimoLivrosSection /> 
         <SupportersSection supporters={content.supporters} />
       </main>
       <Footer />
