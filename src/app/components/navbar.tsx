@@ -39,10 +39,10 @@ const Navbar: React.FC = () => {
     };
 
     if (isMobileMenuOpen) {
-      document.body.style.overflow = "hidden"; // Evitar rolagem quando o menu estiver aberto
+      document.body.style.overflow = "hidden";
       document.addEventListener("mousedown", handleClickOutside);
     } else {
-      document.body.style.overflow = "auto"; // Permitir rolagem quando o menu for fechado
+      document.body.style.overflow = "auto";
       document.removeEventListener("mousedown", handleClickOutside);
     }
 
@@ -75,7 +75,7 @@ const Navbar: React.FC = () => {
             <img
               src="/assets/logo.png"
               alt="Logo Biblioteca Maria Dolores"
-              className="w-20 h-20 object-contain rounded-none fixed left-10 top-4 hover:scale-105 transition-transform"
+              className="w-20 h-20 object-contain rounded-none fixed right-40 md:left-10 top-4 hover:scale-105 transition-transform"
               style={{ zIndex: 1000 }}
             />
           </Link>
@@ -134,11 +134,13 @@ const Navbar: React.FC = () => {
 
         {isMobileMenuOpen && (
           <div
-            className="md:hidden fixed top-0 left-0 w-full h-full bg-[#f8f5e8] z-50 text-[#005226] transition-all duration-300 ease-in-out"
+            className={`md:hidden fixed top-0 left-0 w-full h-full bg-[#f8f5e8] z-50 text-[#005226] transition-all duration-300 ease-in-out ${
+              isMobileMenuOpen ? "pt-24" : "pt-16"
+            }`}
             ref={mobileMenuRef}
           >
-            <div className="container mx-auto px-4 pt-16 space-y-4 relative">
-              <div className="absolute top-4 right-4">
+            <div className="container mx-auto px-4 space-y-4 relative">
+              <div className="absolute top-2 right-6"> {/* Mudei aqui para alinhar o X */}
                 <button
                   className="text-[#005226] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#005226]"
                   onClick={() => setIsMobileMenuOpen(false)}
