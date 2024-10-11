@@ -3,7 +3,6 @@ import React from 'react';
 import Footer from '../../components/footer';
 import Navbar from '../../components/navbar';
 import Header from '../../components/header';
-import LocalVideoDirections from '../../components/localVideoDirections';
 
 const Contato = () => {
   const contactInfo = {
@@ -47,9 +46,6 @@ const Contato = () => {
               className="rounded-lg shadow-md"
             ></iframe>
           </div>
-        </div>
-        <div className="flex-grow w-full px-4 py-8">
-          <LocalVideoDirections videoPath="/assets/comochegar.mp4" />
         </div>
       </div>
       <Footer />
