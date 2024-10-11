@@ -1,8 +1,8 @@
-'use client';
-import React, { useState } from 'react';
-import DonationModal from './donationModal';
-import { FaFacebookF, FaInstagram } from 'react-icons/fa';
-import Image from 'next/image'; 
+"use client";
+import React, { useState } from "react";
+import DonationModal from "./donationModal";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import Image from "next/image";
 
 const Footer = () => {
   const [showModal, setShowModal] = useState(false);
@@ -22,9 +22,9 @@ const Footer = () => {
           Deseja Contribuir com um PIX?
         </h3>
         <p className="text-center md:text-left text-[#A1E6AC] mb-4 font-medium text-base">
-          Aceitamos sua doação! Se você deseja contribuir com as despesas mensais
-          e atividades da Biblioteca Comunitária Maria Dolores, segue abaixo os
-          dados bancários para transferência.
+          Aceitamos sua doação! Se você deseja contribuir com as despesas
+          mensais e atividades da Biblioteca Comunitária Maria Dolores, segue
+          abaixo os dados bancários para transferência.
         </p>
         <div className="flex flex-col md:flex-row items-center justify-between mb-6">
           <div className="text-center md:text-left text-sm space-y-1">
@@ -37,8 +37,8 @@ const Footer = () => {
             <Image
               src="/assets/qrCode.jpeg"
               alt="QR Code para doação PIX"
-              width={112} 
-              height={112} 
+              width={112}
+              height={112}
               className="rounded-md shadow-md"
             />
           </div>
@@ -51,7 +51,7 @@ const Footer = () => {
             Fazer uma Doação Agora
           </button>
         </div>
-        <DonationModal showModal={showModal} onClose={handleCloseModal} />
+        <DonationModal isOpen={showModal} onClose={handleCloseModal} />
 
         <div className="text-center md:text-left mt-8">
           <h3 className="font-bold mb-2 text-lg">Endereço:</h3>
@@ -62,7 +62,8 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-[#A1E6AC] hover:underline"
             >
-              R. Padre Calebe, 3725 - Mamoud Amed, Itacoatiara, Amazonas - Brasil
+              R. Padre Calebe, 3725 - Mamoud Amed, Itacoatiara, Amazonas -
+              Brasil
             </a>
           </p>
           <p className="text-sm">CEP: 69100-000</p>

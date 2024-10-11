@@ -1,16 +1,16 @@
-'use client';
 import React from 'react';
 import Image from 'next/image';
+
 type DonationModalProps = {
-  showModal: boolean;
+  isOpen: boolean;
   onClose: () => void;
 };
 
 const DonationModal: React.FC<DonationModalProps> = ({
-  showModal,
+  isOpen,
   onClose,
 }) => {
-  if (!showModal) return null;
+  if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
