@@ -1,6 +1,5 @@
 
 import React from 'react';
-
 type AboutSectionProps = {
   aboutTitle: string;
   aboutDescription1: string;
