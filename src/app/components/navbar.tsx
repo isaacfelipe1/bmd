@@ -140,7 +140,7 @@ const Navbar: React.FC = () => {
             ref={mobileMenuRef}
           >
             <div className="container mx-auto px-4 space-y-4 relative">
-              <div className="absolute top-2 right-6"> {/* Mudei aqui para alinhar o X */}
+              <div className="absolute top-2 right-6"> 
                 <button
                   className="text-[#005226] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#005226]"
                   onClick={() => setIsMobileMenuOpen(false)}
