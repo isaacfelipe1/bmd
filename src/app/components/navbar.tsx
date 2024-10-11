@@ -39,12 +39,15 @@ const Navbar: React.FC = () => {
     };
 
     if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden"; // Evitar rolagem quando o menu estiver aberto
       document.addEventListener("mousedown", handleClickOutside);
     } else {
+      document.body.style.overflow = "auto"; // Permitir rolagem quando o menu for fechado
       document.removeEventListener("mousedown", handleClickOutside);
     }
 
     return () => {
+      document.body.style.overflow = "auto";
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isMobileMenuOpen]);
