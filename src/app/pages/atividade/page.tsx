@@ -1,6 +1,7 @@
 import Footer from '../../components/footer';
 import Navbar from '../../components/navbar';
 import Header from '../../components/header';
+import Atividades from '../../components/atividades'; 
 
 const ComoChegarPage = () => {
   const content = {
@@ -21,7 +22,7 @@ const ComoChegarPage = () => {
         <div className="absolute inset-0 bg-black opacity-40"></div>
       </Header>
       <div className="flex-grow w-full px-4 py-8">
-        <p>Em construção</p>
+        <Atividades />
       </div>
       <Footer />
     </div>

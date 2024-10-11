@@ -3,15 +3,15 @@ import React from 'react';
 
 const EmprestimoLivrosSection = () => {
   const galleryPhotos = [
-    { url: '/assets/livros01.jpg', alt: 'Foto de livros' },
-    { url: '/assets/livros02.jpg', alt: 'Prateleira de livros diversos' },
-    { url: '/assets/livros03.jpg', alt: 'Livros em destaque' },
-    { url: '/assets/livros04.jpg', alt: 'Leitura infantil' },
+    { url: '/assets/livros01.jpg', alt: 'Foto de livros', caption: 'Livros variados para todos os gostos' },
+    { url: '/assets/livros02.jpg', alt: 'Prateleira de livros diversos', caption: 'Organização impecável do acervo' },
+    { url: '/assets/livros03.jpg', alt: 'Livros em destaque', caption: 'Títulos mais populares do momento' },
+    { url: '/assets/livros04.jpg', alt: 'Leitura infantil', caption: 'Sessão dedicada à leitura infantil' },
   ];
 
   return (
     <section className="py-8">
-      <h2 className="text-2xl font-bold text-gray-900 mb-4">
+      <h2 className="text-3xl font-bold text-gray-900 mb-6">
         SERVIÇO DE EMPRÉSTIMO DE LIVROS DISPONÍVEL
       </h2>
       <p className="text-lg text-gray-700 mb-4">
@@ -22,14 +22,18 @@ const EmprestimoLivrosSection = () => {
         Horário: 08h às 12h | 14h às 17h
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
         {galleryPhotos.map((photo, index) => (
-          <div key={index} className="overflow-hidden rounded-lg shadow-md">
+          <div
+            key={index}
+            className="group overflow-hidden rounded-lg shadow-md transition-all duration-300 transform hover:scale-105"
+          >
             <img
               src={photo.url}
               alt={photo.alt}
-              className="object-cover w-full h-48"
+              className="object-cover w-full h-48 transition-all duration-300"
             />
+            <p className="text-center mt-2 text-gray-600 text-sm">{photo.caption}</p>
           </div>
         ))}
       </div>
