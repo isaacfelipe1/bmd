@@ -1,12 +1,14 @@
 'use client';
 import React from 'react';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 
 const EmprestimoLivrosSection = () => {
   const galleryPhotos = [
-    { url: '/assets/livros01.jpg', alt: 'Foto de livros', caption: 'Livros variados para todos os gostos' },
-    { url: '/assets/livros02.jpg', alt: 'Prateleira de livros diversos', caption: 'Organização impecável do acervo' },
-    { url: '/assets/livros03.jpg', alt: 'Livros em destaque', caption: 'Títulos mais populares do momento' },
-    { url: '/assets/livros04.jpg', alt: 'Leitura infantil', caption: 'Sessão dedicada à leitura infantil' },
+    { url: '/assets/livros01.jpg', alt: 'Foto de livros diversos com capas coloridas em destaque', caption: 'Livros variados para todos os gostos' },
+    { url: '/assets/livros02.jpg', alt: 'Prateleira organizada com livros diversos, categorias variadas', caption: 'Organização impecável do acervo' },
+    { url: '/assets/livros03.jpg', alt: 'Livros em destaque em uma mesa central da biblioteca', caption: 'Títulos mais populares do momento' },
+    { url: '/assets/livros04.jpg', alt: 'Sessão de leitura infantil com livros coloridos em exibição', caption: 'Sessão dedicada à leitura infantil' },
   ];
 
   return (
@@ -28,12 +30,17 @@ const EmprestimoLivrosSection = () => {
             key={index}
             className="group overflow-hidden rounded-lg shadow-md transition-all duration-300 transform hover:scale-105"
           >
-            <img
-              src={photo.url}
-              alt={photo.alt}
-              className="object-cover w-full h-48 transition-all duration-300"
-            />
-            <p className="text-center mt-2 text-gray-600 text-sm">{photo.caption}</p>
+            <Zoom>
+              <img
+                src={photo.url}
+                alt={photo.alt}
+                loading="lazy"
+                className="object-cover w-full h-48 transition-all duration-300"
+              />
+            </Zoom>
+            <p className="text-center mt-2 text-gray-600 text-sm hover:text-gray-900 transition-colors duration-300">
+              {photo.caption}
+            </p>
           </div>
         ))}
       </div>
