@@ -46,8 +46,6 @@ const Contato = () => {
               loading="lazy"
               className="rounded-lg shadow-md mb-4"
             ></iframe>
-
-            {/* Adicionando a foto do local */}
             <img
               src={contactInfo.localPhoto}
               alt="Foto do local"
