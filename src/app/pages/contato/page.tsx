@@ -3,7 +3,7 @@ import React from 'react';
 import Footer from '../../components/footer';
 import Navbar from '../../components/navbar';
 import Header from '../../components/header';
-import LocalVideoDirections from '../../components/localVideoDirections'; // Certifique-se de que este componente esteja corretamente importado
+import LocalVideoDirections from '../../components/localVideoDirections';
 
 const Contato = () => {
   const contactInfo = {
@@ -48,7 +48,6 @@ const Contato = () => {
             ></iframe>
           </div>
         </div>
-        {/* Adicionando o vídeo "Como Chegar" abaixo do mapa */}
         <div className="flex-grow w-full px-4 py-8">
           <LocalVideoDirections videoPath="/assets/comochegar.mp4" />
         </div>
