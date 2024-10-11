@@ -1,6 +1,5 @@
 import Footer from '../../components/footer';
 import Navbar from '../../components/navbar';
-import LocalVideoDirections from '../../components/localVideoDirections';
 import Header from '../../components/header';
 
 const ComoChegarPage = () => {
@@ -22,7 +21,7 @@ const ComoChegarPage = () => {
         <div className="absolute inset-0 bg-black opacity-40"></div>
       </Header>
       <div className="flex-grow w-full px-4 py-8">
-        <LocalVideoDirections videoPath="/assets/comochegar.mp4" />
+        <p>Em construção</p>
       </div>
       <Footer />
     </div>

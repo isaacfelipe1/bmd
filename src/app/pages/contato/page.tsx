@@ -3,13 +3,14 @@ import React from 'react';
 import Footer from '../../components/footer';
 import Navbar from '../../components/navbar';
 import Header from '../../components/header';
+import LocalVideoDirections from '../../components/localVideoDirections'; // Certifique-se de que este componente esteja corretamente importado
 
 const Contato = () => {
   const contactInfo = {
     address: 'R. Padre Calebe, 3725 - Mamoud Amed, Itacoatiara, Amazonas - Brasil\nCEP: 69100-000',
     phone: '(92) 98488-2959',
     email: 'biblioteca.com.br',
-    mapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.503473194025!2d-58.43825248520773!3d-3.136573997732735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x928b5b5a5bfdbf71%3A0x4b37b4e4c1a44116!2sR.%20Padre%20Calebe%2C%203725%20-%20Mamoud%20Amed%2C%20Itacoatiara%20-%20AM%2C%2069100-000!5e0!3m2!1sen!2sbr!4v1696949676859!5m2!1sen!2sbr', // Link atualizado para o endereço exato
+    mapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.503473194025!2d-58.43825248520773!3d-3.136573997732735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x928b5b5a5bfdbf71%3A0x4b37b4e4c1a44116!2sR.%20Padre%20Calebe%2C%203725%20-%20Mamoud%20Amed%2C%20Itacoatiara%20-%20AM%2C%2069100-000!5e0!3m2!1sen!2sbr!4v1696949676859!5m2!1sen!2sbr',
   };
 
   return (
@@ -46,6 +47,10 @@ const Contato = () => {
               className="rounded-lg shadow-md"
             ></iframe>
           </div>
+        </div>
+        {/* Adicionando o vídeo "Como Chegar" abaixo do mapa */}
+        <div className="flex-grow w-full px-4 py-8">
+          <LocalVideoDirections videoPath="/assets/comochegar.mp4" />
         </div>
       </div>
       <Footer />

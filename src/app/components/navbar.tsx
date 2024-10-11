@@ -100,10 +100,10 @@ const Navbar: React.FC = () => {
               CONTATO
             </Link>
             <Link
-              href="../pages/como-chegar"
+              href="../pages/atividade"
               className="bg-[#FFA500] text-white py-1.5 px-3 rounded-full font-medium text-base hover:bg-[#FF8C00] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#FF8C00] transition duration-300"
             >
-              COMO CHEGAR
+              ATIVIDADE
             </Link>
           </div>
           <div className="hidden md:flex items-center space-x-4">
@@ -172,11 +172,11 @@ const Navbar: React.FC = () => {
                 CONTATO
               </Link>
               <Link
-                href="../pages/como-chegar"
+                href="../pages/atividade"
                 className="block bg-[#FFA500] text-white py-1.5 px-3 rounded-full font-medium text-base hover:bg-[#FF8C00] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#FF8C00] transition duration-300"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                COMO CHEGAR
+                ATIVIDADE
               </Link>
               <button
                 onClick={toggleModal}
