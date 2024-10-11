@@ -15,7 +15,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
     <section className="relative py-12" style={{ marginTop: '50px' }}>
       <div className="container mx-auto px-4 lg:px-8 lg:max-w-4xl shadow-lg rounded-lg backdrop-blur-md bg-transparent">
         <h3 className="text-[#005226] text-sm uppercase font-bold tracking-wide mb-4">
-          SOBRE O ECO
+          SOBRE a biblioetca
         </h3>
         <h2 className="text-[#005226] text-3xl lg:text-4xl font-bold mb-6">
           {aboutTitle}
