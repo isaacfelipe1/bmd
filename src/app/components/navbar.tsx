@@ -60,8 +60,11 @@ const Navbar: React.FC = () => {
     setIsModalOpen((prev) => !prev);
   };
 
-  const unifiedButtonStyle =
-    "bg-yellow-500 text-black py-2 px-4 rounded-full font-medium text-sm hover:bg-yellow-600 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition duration-300 transform hover:scale-105 active:bg-yellow-700";
+  const unifiedButtonStyleSmall =
+    "bg-yellow-500 text-black py-2 px-4 rounded-full font-medium text-xs hover:bg-yellow-600 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition duration-300 transform hover:scale-105 active:bg-yellow-700";
+
+  const doeAgoraButtonStyle =
+    "bg-yellow-500 text-black py-6 px-6 rounded-none font-bold text-lg hover:bg-yellow-600 hover:shadow-lg transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 md:absolute md:right-10 md:top-0 md:translate-y-[0%]";
 
   return (
     <>
@@ -81,19 +84,19 @@ const Navbar: React.FC = () => {
           </Link>
 
           <div className="hidden md:flex flex-1 justify-center space-x-4">
-            <Link href="/" className={unifiedButtonStyle}>
+            <Link href="/" className={unifiedButtonStyleSmall}>
               INÍCIO
             </Link>
-            <Link href="../pages/nosso-time" className={unifiedButtonStyle}>
+            <Link href="../pages/nosso-time" className={unifiedButtonStyleSmall}>
               NOSSO TIME
             </Link>
-            <Link href="../pages/como-comecou" className={unifiedButtonStyle}>
+            <Link href="../pages/como-comecou" className={unifiedButtonStyleSmall}>
               COMO TUDO COMEÇOU
             </Link>
-            <Link href="../pages/contato" className={unifiedButtonStyle}>
+            <Link href="../pages/contato" className={unifiedButtonStyleSmall}>
               CONTATO
             </Link>
-            <Link href="../pages/atividade" className={unifiedButtonStyle}>
+            <Link href="../pages/atividade" className={unifiedButtonStyleSmall}>
               ATIVIDADES
             </Link>
           </div>
@@ -101,7 +104,7 @@ const Navbar: React.FC = () => {
           <div className="hidden md:flex items-center space-x-4">
             <button
               onClick={toggleModal}
-              className="bg-yellow-500 text-black py-6 px-6 rounded-none font-bold text-lg hover:bg-yellow-600 hover:shadow-lg transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 md:absolute md:right-10 md:top-0 md:translate-y-[0%]"
+              className={doeAgoraButtonStyle}
               style={{ zIndex: 1000 }}
             >
               Doe Agora
@@ -140,7 +143,7 @@ const Navbar: React.FC = () => {
             ref={mobileMenuRef}
           >
             <div className="container mx-auto px-4 space-y-4 relative">
-              <div className="absolute top-2 right-6"> 
+              <div className="absolute top-2 right-6">
                 <button
                   className="text-[#005226] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#005226]"
                   onClick={() => setIsMobileMenuOpen(false)}
@@ -164,35 +167,35 @@ const Navbar: React.FC = () => {
               <div className="flex flex-col items-center space-y-3">
                 <Link
                   href="/"
-                  className={unifiedButtonStyle}
+                  className={unifiedButtonStyleSmall}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   INÍCIO
                 </Link>
                 <Link
                   href="../pages/nosso-time"
-                  className={unifiedButtonStyle}
+                  className={unifiedButtonStyleSmall}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   NOSSO TIME
                 </Link>
                 <Link
                   href="../pages/como-comecou"
-                  className={unifiedButtonStyle}
+                  className={unifiedButtonStyleSmall}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   COMO TUDO COMEÇOU
                 </Link>
                 <Link
                   href="../pages/contato"
-                  className={unifiedButtonStyle}
+                  className={unifiedButtonStyleSmall}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   CONTATO
                 </Link>
                 <Link
                   href="../pages/atividade"
-                  className={unifiedButtonStyle}
+                  className={unifiedButtonStyleSmall}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   ATIVIDADES
