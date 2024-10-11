@@ -6,7 +6,6 @@ type AboutSectionProps = {
   aboutDescription1: string;
   aboutDescription2: string;
 };
-
 const AboutSection: React.FC<AboutSectionProps> = ({
   aboutTitle,
   aboutDescription1,
